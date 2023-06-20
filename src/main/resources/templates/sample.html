@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span th:text="#{hello}"></span>
+<button type="button" th:text="#{switch.en}"
+        onclick="window.location.href='http://127.0.0.1:8080/hello?lang=en'"></button>
+<button type="button" th:text="#{switch.ru}"
+        onclick="window.location.href='http://127.0.0.1:8080/hello?lang=ru'"></button>
+</body>
+</html>
