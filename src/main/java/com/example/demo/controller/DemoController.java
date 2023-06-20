@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class DemoController {
     private ExampleService service;
-    @GetMapping("hello/{param}")
+    @GetMapping("object/{param}")
     public ExampleDTO getName(@PathVariable @Max(100) int param, @RequestParam @NotNull String name, @RequestBody @Valid ExampleDTO arsel) {
-        return service.renameExample(arsel,param,name);
+        return service.renameExample(arsel, param, name);
     }
 }
